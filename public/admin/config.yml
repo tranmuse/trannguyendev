@@ -22,7 +22,7 @@ collections:
             - { label: "Description", name: "description", widget: "text"}
   - name: "projects"
     label: "Projects"
-    files:
+    fields:
       - label: "Bookmarks"
         name: "bookmark"
         file: "content/projects/bookmark.md"
@@ -31,7 +31,7 @@ collections:
           - { label: "Name", name: "name", widget: "string"}
           - { label: "Description", name: "description", widget: "text"}
           - { label: "Date Added", name: "date", widget: "datetime" }
-          - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true, default: "public/img/img_0923.jpg"}
+          - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true, default: "public/img/default.jpg"}
           - { label: "Tags", name: "tags", widget: "list"}
 
 
