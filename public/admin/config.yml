@@ -23,17 +23,24 @@ collections:
   - name: "projects"
     label: "Projects"
     create: true
+    folder: "_projects/project"
     files: 
       - label: "Bookmarks"
         name: "bookmark"
-        file: "content/projects/bookmark.yml"
-        widget: list
-        fields: 
-          - { label: "Name", name: "name", widget: "string"}
-          - { label: "Description", name: "description", widget: "text"}
-          - { label: "Date Added", name: "date", widget: "datetime" }
-          - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true, default: "public/img/default.jpg"}
-          - { label: "Tags", name: "tags", widget: "list"}
+        file: "content/projects/bookmarks.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Description", name: "description", widget: "markdown" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - label: 'Bookmark Pages'
+            name: "bookmarkpages"
+            widget: list
+            fields: 
+              - { label: "Name", name: "name", widget: "string"}
+              - { label: "Description", name: "description", widget: "text"}
+              - { label: "Date Added", name: "date", widget: "datetime" }
+              - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true, default: "public/img/default.jpg"}
+              - { label: "Tags", name: "tags", widget: "list"}
 
 
         
