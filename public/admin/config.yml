@@ -23,7 +23,6 @@ collections:
   - name: "projects"
     label: "Projects"
     create: true
-    folder: "_projects/project"
     files: 
       - label: "Bookmarks"
         name: "bookmark"
