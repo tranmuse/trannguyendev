@@ -16,6 +16,6 @@ bookmarkpages:
     name: Google
     description: Search Engine
     tags:
-      - ABC
+      - ABC;xyz
     url: https://www.netlifycms.org/docs/collection-types/#file-collections
 ---
