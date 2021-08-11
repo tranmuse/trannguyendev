@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { attributes, react as HomeContent } from '../content/home.md';
 
 export default class Home extends Component {
@@ -10,21 +11,46 @@ export default class Home extends Component {
         <Head>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
-        <div className="bg-white">
-          <header className="mx-auto container py-5 px-4 xl:px-0">
-            <div className="flex items-center justify-center">
-              <a href="javascript: void(0)">
-                        <svg aria-label="Home" className="w-12 h-12" id="logo" enableBackground="new 0 0 300 300" height={44} viewBox="0 0 300 300" width={43} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                            <g>
-                                <path
-                                    fill="#4c51bf"
-                                    d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z"
-                                />
-                            </g>
-                        </svg>
-                    </a>
+        <div>
+          <section class="bg-gray-900 text-gray-200">
+            <div class="container flex flex-col px-5 py-12 mx-auto lg:items-center">
+              <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                <h2 class="mb-4 text-xs font-semibold tracking-widest uppercase">Tran Nguyen Dev</h2>
+                <h1 class="mb-6 text-2xl font-semibold tracking-tighter sm:text-5xl">I learn. I fail. I share.</h1>
+                <p class="mx-auto text-base font-medium leading-relaxed lg:w-2/3">Hi, I'm Tran Nguyen. I'm just simply a learner. I'm enthusiastic about software development, 3D Design, 3D Animation, 3D Printing, and much more. </p>
+              </div>
             </div>
-          </header>
+          </section>
+          <section class="bg-gray-900">
+            <div class="container flex flex-col items-center justify-center px-10 pb-24 mx-auto rounded-lg lg:-mt-12 lg:px-40">
+              <img class="object-cover object-center w-full shadow-xl rounded-xl" alt="hero" src="https://dummyimage.com/720x600/F3F4F7/8693ac"/>
+            </div>
+          </section>
+
+          <div class="container items-center">
+            <footer class="text-blueGray-700 transition duration-500 ease-in-out transform bg-white border rounded-lg ">
+              <div class="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
+                <a href="/" class="pr-2 lg:pr-8 lg:px-6 focus:outline-none">
+                  <div class="inline-flex items-center">
+                    <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-blue-500 to-blue-600">
+                    </div>
+                    <h2 class="block p-2 text-xl font-medium tracking-tighter text-black transition duration-500 ease-in-out transform cursor-pointer hover:text-blueGray-500 lg:text-x lg:mr-8"> wickedblocks </h2>
+                  </div>
+                </a>
+                <span class="inline-flex justify-center mt-2 mr-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                  <a class="text-blue-500 hover:text-black">
+                  <FontAwesomeIcon icon="facebook" />
+                  </a>
+                  <a class="ml-3 text-blue-500 hover:text-black">
+                  </a>
+                  <a class="ml-3 text-blue-500 hover:text-black">
+                  </a>
+                  <a class="ml-3 text-blue-500 hover:text-black">
+                  </a>
+                </span>
+              </div>
+            </footer>
+          </div>
         </div>
         {/* <article>
           <h1 className="text-green-500">{title}</h1>
